@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace No7.Solution
 {
+    //Вроде неплохо выглядит
     internal class TradeRecord
     {
         internal string DestinationCurrency;

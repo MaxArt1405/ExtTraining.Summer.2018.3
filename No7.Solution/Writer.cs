@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace No7.Solution
 {
-    internal class Writer
+    //Класс для записи информации в БД
+    internal static class Writer
     {
-        public void Write(List<TradeRecord> trades)
+        internal static void Write(List<TradeRecord> trades)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["TradeData"].ConnectionString;
             using (var connection = new SqlConnection(connectionString))
@@ -31,7 +32,6 @@ namespace No7.Solution
 
                         command.ExecuteNonQuery();
                     }
-
                     transaction.Commit();
                 }
                 connection.Close();
