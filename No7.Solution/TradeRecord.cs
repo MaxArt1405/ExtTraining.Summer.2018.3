@@ -1,4 +1,10 @@
-﻿namespace No7.Solution.Console
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace No7.Solution
 {
     internal class TradeRecord
     {
